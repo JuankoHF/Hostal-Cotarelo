@@ -1,0 +1,125 @@
+@import "./global.css";
+
+.welcome {
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35vh 0 5vh;
+    position: relative;
+    background-color: var(--trasparent-color-blue);
+}
+
+.welcome_hostal {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.welcome_hostal p {
+    font-weight: 200;
+    font-family: 'Outfit', sans-serif;
+    color: var(--white-page);
+    font-size: var(--font-28-big);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    margin: 0;
+    /* border-bottom: solid 1px var(--white-page); */
+    background-color: var(--detalle-grey);
+}
+
+.welcome_hostal span {
+    display: block;
+    width: 300px;
+    height: 80px;
+    background-image: url(../icons/LOGO-COTARELO.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--white-page);
+}
+
+.welcome_hostal a {
+    text-decoration: none;
+    color: var(--white-page);
+    font-size: var(--font-16-medium);
+    text-transform: uppercase;
+    font-weight: 200;
+    font-family: 'Outfit', sans-serif;
+    padding: 6px 14px;
+    border: solid 2px var(--white-page);
+}
+
+.welcome_botom {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.welcome_botom h1 {
+    font-size: var(--font-2-medium);
+    letter-spacing: 0.8px;
+    color: var(--white-page);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.welcome_botom h2 {
+    font-size: var(--font-16-medium);
+    letter-spacing: 0.4px;
+    color: var(--white-page);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+.welcome_botom ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.welcome_botom ul li {
+    display: flex;
+    gap: 6px;
+    list-style: none;
+    align-items: center;
+    font-size: var(--font-1-medium);
+    color: var(--white-page);
+}
+.welcome_botom ul li span {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.wifi {
+    background-image: url(../icons/wifi-white.svg);
+    margin-bottom: 4px;
+}
+.climatization {
+    background-image: url(../icons/snow-white.svg);
+}
+.tele {
+    background-image: url(../icons/tv-white.svg);
+}
+.water {
+    background-image: url(../icons/shower-white.svg);
+}
+.frizet {
+    background-image: url(../icons/fridge-white.svg);
+}
