@@ -8,6 +8,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding-bottom: 48px;
 }
 
 .bg_solid {
@@ -85,4 +86,95 @@
 
 .last_service {
     margin-top: 20px !important;
+}
+
+.content_icon_service {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    padding: 48px 0;
+    background-color: var(--trasparent-color-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.icons_service {
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.icons_service h2 {
+    font-size: var(--font-24-big);
+    text-transform: uppercase;
+    color: var(--white-page);
+    letter-spacing: 0.4px;
+    line-height: inherit;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.icons_service ul {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 12px 24px;
+}
+
+.icons_service ul li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    list-style: none;
+    font-size: var(--font-16-medium);
+    color: var(--white-page);
+}
+.icons_service ul li span {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.secador {
+    background-image: url(../icons/hairdryer-on-2-svgrepo-com.svg);
+}
+.shampoo {
+    background-image: url(../icons/shampoo-free-5-svgrepo-com.svg);
+}
+
+.lavadora {
+    background-image: url(../icons/washing-machine-laundry-cleaning-housekeeping-washing-svgrepo-com.svg);
+}
+.perchas {
+    background-image: url(../icons/hanger-svgrepo-com.svg);
+}
+
+.plancha {
+    background-image: url(../icons/iron-svgrepo-com.svg);
+}
+.zona_trabajo {
+    background-image: url(../icons/bureau-svgrepo-com.svg);
+}
+.cubiertos {
+    background-image: url(../icons/cutlery-plate-svgrepo-com.svg);
+}
+.patio {
+    background-image: url(../icons/flower-svgrepo-com.svg);
+}
+.parking {
+    background-image: url(../icons/parking-garage-svgrepo-com.svg);
+}
+.llave {
+    background-image: url(../icons/key-svgrepo-com.svg);
 }
