@@ -22,7 +22,6 @@ window.addEventListener('scroll', function() {
     let positionAnimateHeader = animateHeader.getBoundingClientRect().top;
     let smallHeader = document.querySelector(".header_content");
     let navResponsive = document.querySelector(".responsive_display")
-    console.log(positionAnimateHeader)
     
     
     if(positionAnimateHeader < -140) {
