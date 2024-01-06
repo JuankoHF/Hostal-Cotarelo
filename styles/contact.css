@@ -1,0 +1,103 @@
+@import "./global.css";
+
+.contact {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--white-page);
+    padding: 8px 0 48px;
+}
+
+.container_form {
+    position: relative;
+    max-width: 500px;
+    width: 85%;
+    padding: 8px 25px 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+  
+.container_form h2 {
+    font-size: var(--font-24-big);
+    text-transform: uppercase;
+    color: var(--total-black);
+    letter-spacing: 0.4px;
+    line-height: inherit;
+    margin-bottom: 12px;
+    font-weight: 500;
+    text-align: center;
+}
+  
+.form {
+    margin-top: 15px;
+}
+  
+.form .input-box {
+    width: 100%;
+    margin: 8px 0;
+}
+  
+.input-box label {
+    color: #000;
+    font-size: var(--font-14-medium);
+}
+  
+.form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 35px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #808080;
+   
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 0 15px;
+    background: #eef4fa;
+}
+  
+.input-box input:focus, textarea:focus {
+    border: 1px solid var(--total-black); 
+    background: var(--white-page); 
+}
+  
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
+  
+textarea {
+    width: 100%;
+    height: 100px;
+    outline: none;
+    font-size: 1rem;
+    color: #808080;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 8px 15px;
+    background: #eef4fa;
+}
+  
+.form button {
+    height: 40px;
+    width: 100%;
+    color: var(--white-page);
+    font-size: var(--font-14-medium);
+    letter-spacing: 0.4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: var(--primary-color);
+}
+  
+.form button:hover {
+    background: var(--total-black);
+}
