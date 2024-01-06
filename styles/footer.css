@@ -1,0 +1,118 @@
+@import "./global.css";
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+    background-color: var(--white-page);
+    position: relative;
+    border-top: solid 1px var(--detalle-grey);
+}
+.footer {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.content {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 4px;
+}
+.content a {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--total-black);
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.footer img {
+    display: flex;
+    width: 240px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 4px;
+}
+.content_signature {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2px;
+    margin-bottom: 12px;
+}
+.content_signature p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--detalle-grey);
+}
+.content_signature p strong {
+    color: var(--total-black);
+    font-size: 1.4rem;
+}
+
+.tope_etymology p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--detalle-grey);
+}
+.tope_etymology p strong {
+    color: var(--total-black);
+}
+.icons_company {
+    width: 70%;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 28px;
+}
+.icons_company img {
+    width: 34px;
+    height: 40px;
+    object-fit: cover;
+}
+.jnk {
+    width: 50px;
+    height: min-content;
+    border: solid 2px var(--total-black);
+    border-radius: 6px;
+}
+
+@media screen and (min-width: 1900px) {
+    footer {
+        padding: 60px 0;
+    }
+    .content {
+        gap: 16px;
+        margin-bottom: 36px;
+    }
+    .content a {
+        font-size: 1.6rem;
+    }
+    .content_signature {
+        gap: 4px;
+        margin-bottom: 20px;
+    }
+    .content_signature p {
+        font-size: 1.2rem;
+    }
+    .tope_etymology p {
+        font-size: 1.2rem;
+    }
+    .icons_company {
+        margin-top: 36px;
+    }
+}
