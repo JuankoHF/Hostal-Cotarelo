@@ -9,14 +9,14 @@
     justify-content: flex-start;
     align-items: center;
     background-color: var(--white-page);
-    padding: 8px 0 48px;
+    padding: 48px 0;
 }
 
 .container_form {
     position: relative;
     max-width: 500px;
     width: 85%;
-    padding: 8px 25px 25px;
+    padding: 16px 16px 24px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
@@ -55,7 +55,7 @@
     color: #414040;
     border: 1px solid var(--detalle-grey);
     border-radius: 6px;
-    padding: 0 15px;
+    padding: 0 8px 0 12px;
     background: #dcdddf;
 }
   

@@ -1,10 +1,10 @@
 window.sr =ScrollReveal();
 
-    sr.reveal('.header_top', {
-        duration: 2000,
-        origin: 'bottom',
-        distance: '-200px'
-    });
+    // sr.reveal('.header_top', {
+    //     duration: 2000,
+    //     origin: 'bottom',
+    //     distance: '-200px'
+    // });
 
 
     sr.reveal('.welcome_hostal', {
