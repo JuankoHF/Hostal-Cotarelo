@@ -52,12 +52,11 @@
     width: 100%;
     outline: none;
     font-size: 1rem;
-    color: #808080;
-   
-    border: 1px solid var(--primary-color);
+    color: #414040;
+    border: 1px solid var(--detalle-grey);
     border-radius: 6px;
     padding: 0 15px;
-    background: #eef4fa;
+    background: #dcdddf;
 }
   
 .input-box input:focus, textarea:focus {
@@ -75,11 +74,11 @@ textarea {
     height: 100px;
     outline: none;
     font-size: 1rem;
-    color: #808080;
-    border: 1px solid var(--primary-color);
+    color: #414040;
+    border: 1px solid var(--detalle-grey);
     border-radius: 6px;
     padding: 8px 15px;
-    background: #eef4fa;
+    background: #dcdddf;
 }
   
 .form button {
