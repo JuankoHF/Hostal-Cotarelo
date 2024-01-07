@@ -14,7 +14,7 @@
 
 .container_form {
     position: relative;
-    max-width: 500px;
+    max-width: 600px;
     width: 85%;
     padding: 16px 16px 24px;
     border-radius: 8px;
@@ -99,4 +99,34 @@ input[type="submit"] {
   
 input[type="submit"]:hover {
     background: var(--total-black);
+}
+
+@media screen and (min-width: 700px) and (min-height: 510px) {
+    .contact {
+        padding: 60px 0;
+    }
+    .container_form {
+        width: 80%;
+        padding: 40px;
+        border-radius: 10px;
+    }
+
+    .input-box label {
+        font-size: var(--font-16-medium);
+    }
+    .form :where(.input-box input, .select-box) {
+        height: 44px;
+        font-size: 1.6rem;
+        padding: 0 8px 0 16px;
+    }
+    textarea {
+        height: 180px;
+        font-size: 1.6rem;
+        padding: 8px 16px;
+    }
+    input[type="submit"] {
+        height: 60px;
+        font-size: var(--font-18-medium);
+        margin-top: 40px;
+    }
 }

@@ -179,3 +179,61 @@
 .llave {
     background-image: url(../icons/key-svgrepo-com.svg);
 }
+
+@media screen and (min-width: 400px) {
+    .icons_service {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 700px) and (min-height: 510px) {
+    
+    .icons_service {
+        width: 70%;
+    }
+    .service_content h2 {
+        font-size: var(--font-28-big);
+        letter-spacing: 0.8px;
+        margin-bottom: 28px;
+    }
+    .service_content h3 {
+        font-size: var(--font-24-big);
+        margin-bottom: 20px;
+    }
+    .description_service {
+        margin-bottom: 40px;
+    }
+    .service_content p {
+        font-size: var(--font-18-medium);
+        margin-bottom: 12px;
+    }
+    .description_service ul li {
+        font-size: var(--font-18-medium);
+        margin-bottom: 12px !important;
+    }
+    .description_service ul .description {
+        margin: 0 0 12px 16px !important;
+    }
+
+    .content_icon_service {
+        padding: 60px 0;
+    }
+
+    .icons_service h2 {
+        font-size: var(--font-28-big);
+        letter-spacing: 0.8px;
+        margin-bottom: 40px;
+    }
+
+    .icons_service ul {
+        gap: 20px 60px;
+    }
+    .icons_service ul li {
+        gap: 16px;
+        font-size: var(--font-18-medium);
+    }
+    .icons_service ul li span {
+        width: 28px;
+        height: 28px;
+    }
+}

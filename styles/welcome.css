@@ -60,7 +60,7 @@
 
 .welcome_botom {
     width: 90%;
-    max-width: 500px;
+    max-width: 600px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -122,4 +122,49 @@
 }
 .frizet {
     background-image: url(../icons/fridge-white.svg);
+}
+
+@media screen and (min-width: 700px) and (min-height: 510px) {
+    .welcome_hostal {
+        gap: 48px;
+    }
+
+    .welcome_hostal p {
+        font-size: var(--font-3-big);
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+        padding: 16px 32px;
+    }
+
+    .welcome_hostal span {
+        width: 360px;
+        height: 100px; 
+    }
+
+    .welcome_hostal a {
+        font-size: var(--font-2-medium);
+        padding: 8px 28px;
+    }
+
+    .welcome_botom h1 {
+        font-size: var(--font-24-big);
+        letter-spacing: 1.2px;
+        color: var(--white-page);
+        margin-bottom: 20px;
+    }
+
+    .welcome_botom h2 {
+        font-size: var(--font-2-medium);
+        letter-spacing: 0.8px;
+        margin-bottom: 40px;
+    }
+
+    .welcome_botom ul li {
+        gap: 12px;
+        font-size: var(--font-14-medium);
+    }
+    .welcome_botom ul li span {
+        width: 24px;
+        height: 24px;
+    }
 }
