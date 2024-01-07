@@ -422,51 +422,59 @@
 
           <div class="container_form">
             <h2>contáctenos</h2>
-            <form class="form" action="#">
+            <form class="form" action="#" id="form">
                 <div class="input-box">
                     <label>Nombre</label>
-                    <input required="" placeholder="Escriba su nombre completo" type="text">
+                    <input required="" placeholder="Escriba su nombre completo" type="text" name="name">
                 </div>
                 <div class="input-box">
                   <label>Correo electrónico</label>
-                  <input required="" placeholder="Escriba un correo electrónicode contacto" type="email">
+                  <input required="" placeholder="Escriba un correo electrónicode contacto" type="email" name="email">
                 </div>
                 <div class="column">
                     <div class="input-box">
                       <label>Fecha de Entrada</label>
-                      <input required="" placeholder="" type="date">
+                      <input required="" placeholder="" type="date" name="inDate">
                     </div>
                     <div class="input-box">
                       <label>Fecha de salida</label>
-                      <input required="" placeholder="" type="date">
+                      <input required="" placeholder="" type="date" name="outDate">
                     </div>
                 </div>
           
                 <div class="column">
                   <div class="input-box">
                     <label>Huéspedes</label>
-                    <input required="" placeholder="Cantidad de personas" type="number">
+                    <input required="" placeholder="Cantidad de personas" type="number" name="persons">
                   </div>
                   <div class="input-box">
                     <label>Hasta 5 habitaciones</label>
-                    <input required="" placeholder="Cantidad de habitaciones" type="number">
+                    <input required="" placeholder="Cantidad de habitaciones" type="number" name="rooms">
                   </div>
                 </div>
                 <div class="input-box">
                   <label>País de Procedencia</label>
-                  <input required="" placeholder="Desde que pais nos visita" type="text">
+                  <input required="" placeholder="Desde que pais nos visita" type="text" name="country">
                 </div>
 
                 <div class="input-box">
                   <label>Nacionalidad</label>
-                  <input required="" placeholder="" type="text">
+                  <input required="" placeholder="" type="text" name="nation">
                 </div>
                 <div class="input-box text_area">
                   <label>Comentenos en que podemos ayudarle</label>
-                  <textarea required="" rows="10" cols="30" id="message" placeholder="" type="text"> </textarea>
+                  <textarea rows="10" cols="30" id="message" placeholder="" type="text" name="mensage"> </textarea>
                 </div>
-                <button>Enviar</button>
+                <input type="submit" id="button" value="Enviar" >
             </form>
+
+            <script type="text/javascript"
+              src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+            </script>
+
+            <script type="text/javascript">
+              emailjs.init('hALViE8cnISQHVeOA')
+            </script>
           </div>
         </section>
     </main>
@@ -505,5 +513,27 @@
   </script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="./js/class-scrollReveal.js"></script>
+  <script>
+    const btn = document.getElementById('button');
+
+    document.getElementById('form')
+    .addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      btn.value = 'Enviando...';
+
+      const serviceID = 'default_service';
+      const templateID = 'template_or3uzxm';
+
+      emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+          btn.value = 'Enviar';
+          alert('¡Mensaje enviado correctamente!');
+        }, (err) => {
+          btn.value = 'ENVIAR';
+          alert(JSON.stringify(err));
+        });
+    });
+  </script>
 </body>
 </html>
