@@ -23,26 +23,30 @@ window.addEventListener('scroll', function() {
     let smallHeader = document.querySelector(".header_content");
     let navResponsive = document.querySelector(".responsive_display")
     
-   let li1 = document.querySelector(".nav_home");
-   let li2 = document.querySelector(".nav_rooms");
-   let li3 = document.querySelector(".nav_service");
-   let li4 = document.querySelector(".nav_transfer");
-   let li5 = document.querySelector(".nav_contact");
+    let li1 = document.querySelector(".nav_home");
+    let li2 = document.querySelector(".nav_rooms");
+    let li3 = document.querySelector(".nav_service");
+    let li4 = document.querySelector(".nav_transfer");
+    let li5 = document.querySelector(".nav_opinions");
+    let li6 = document.querySelector(".nav_contact");
 
     let scrollTop = window.innerHeight;
     let homeActive = document.getElementById('home');
-    let positionHomeActive = homeActive.getBoundingClientRect().top;
     let roomsActive = document.querySelector(".roons");
     let positionRoomsActive = roomsActive.getBoundingClientRect().top;
     let servicesActive = document.querySelector(".services");
     let positionServicesActive = servicesActive.getBoundingClientRect().top;
     let transfersActive = document.querySelector(".transfers");
     let positionTransfersActive = transfersActive.getBoundingClientRect().top;
+    let opinionsActive = document.querySelector(".opinions");
+    let positionOpinionsActive = opinionsActive.getBoundingClientRect().top;
     let contactActive = document.querySelector(".contact");
     let positionContactActive = contactActive.getBoundingClientRect().top;
 
-    console.log( positionHomeActive, "home");
-    console.log( positionRoomsActive, "room");
+    let moveLogo = document.querySelector(".absolute_over");
+    let positionMoveLogo = moveLogo.getBoundingClientRect().top;
+
+    console.log( positionMoveLogo, "logo");
     console.log(scrollTop);
     if(positionAnimateHeader < -160) {
         smallHeader.classList.add("big_header");
@@ -66,6 +70,7 @@ window.addEventListener('scroll', function() {
         li3.classList.remove("this_section");
         li4.classList.remove("this_section");
         li5.classList.remove("this_section");
+        li6.classList.remove("this_section");
     }
     if(positionRoomsActive < scrollTop/3) {
         li2.classList.add("this_section");
@@ -73,6 +78,7 @@ window.addEventListener('scroll', function() {
         li3.classList.remove("this_section");
         li4.classList.remove("this_section");
         li5.classList.remove("this_section");
+        li6.classList.remove("this_section");
     }
 
     if(positionServicesActive < scrollTop/3) {
@@ -81,6 +87,7 @@ window.addEventListener('scroll', function() {
         li2.classList.remove("this_section");
         li4.classList.remove("this_section");
         li5.classList.remove("this_section");
+        li6.classList.remove("this_section");
     }
 
     if(positionTransfersActive < scrollTop/3) {
@@ -89,12 +96,30 @@ window.addEventListener('scroll', function() {
         li3.classList.remove("this_section");
         li2.classList.remove("this_section");
         li5.classList.remove("this_section");
+        li6.classList.remove("this_section");
     }
-    if(positionContactActive < scrollTop/3) {
+    if(positionOpinionsActive < scrollTop/3) {
         li5.classList.add("this_section");
         li1.classList.remove("this_section");
         li3.classList.remove("this_section");
         li2.classList.remove("this_section");
         li4.classList.remove("this_section");
+        li6.classList.remove("this_section");
+    }
+    if(positionContactActive < scrollTop/3) {
+        li6.classList.add("this_section");
+        li1.classList.remove("this_section");
+        li3.classList.remove("this_section");
+        li2.classList.remove("this_section");
+        li4.classList.remove("this_section");
+        li5.classList.remove("this_section");
+    }
+
+    if(positionMoveLogo < scrollTop/1.5) {
+        moveLogo.classList.add("absolute_hidden")
+    }
+
+    if(positionMoveLogo > scrollTop) {
+        moveLogo.classList.remove("absolute_hidden")
     }
 })

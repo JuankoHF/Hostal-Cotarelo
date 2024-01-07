@@ -72,7 +72,7 @@ footer {
     color: var(--total-black);
 }
 .icons_company {
-    width: 70%;
+    width: 50%;
     max-width: 400px;
     display: flex;
     justify-content: space-between;
