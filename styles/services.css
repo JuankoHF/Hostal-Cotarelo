@@ -23,7 +23,7 @@
     padding-bottom: 48px;
 }
 .service_content {
-    width: 80%;
+    width: 90%;
     max-width: 800px;
     height: auto;
     display: flex;
@@ -57,8 +57,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 20px
+    align-items: center;
+    
 }
 .description_service p {
     font-size: var(--font-16-medium);
@@ -66,14 +66,93 @@
     line-height: inherit;
 }
 
-.description_service ul li {
-    font-size: var(--font-16-medium);
-    margin-bottom: 8px !important;
-    line-height: inherit;
+.content_mural {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 12px 0;
 }
-.description_service ul .description {
-    margin: 0 0 12px 10px !important;
+
+.alining_left, .alining_right {
+    width: 154px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 160px;
+    z-index: 5;
+    overflow-y: hidden;
 }
+
+.alining_left ul li, .alining_right ul li {
+    font-size: var(--font-14-medium);
+}
+
+.alining_left ul .description, .alining_right ul .description {
+    margin-top: 8px !important;
+}
+
+.alining_right ul li {
+    text-align: right;
+}
+
+.image_mural {
+    width: 300px;
+    height: 120px;
+    position: absolute;
+    top: calc(50% - 60px);
+    left: calc(50% - 150px);
+    z-index: 1;
+}
+.image_mural img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.content_image_all_services {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px
+}
+
+.all_services_top img, .all_services_bottom img {
+    object-fit: cover;
+    display: flex;
+    object-position: center;
+}
+
+.all_services_top {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    gap: 8px;
+}
+.img_left {
+    width: 60%;
+    height: 100%;
+}
+.img_center, .img_right {
+    width: 20%;
+    height: 100%;
+}
+.all_services_bottom {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    gap: 8px;
+}
+
 .service_content p {
     font-size: var(--font-16-medium);
     margin-bottom: 8px;
@@ -129,6 +208,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(7, 1fr);
     gap: 12px 24px;
+    padding: 0 5% !important;
 }
 
 .icons_service ul li {
@@ -181,6 +261,9 @@
 }
 
 @media screen and (min-width: 400px) {
+   .service_content {
+        width: 80%;
+    }
     .icons_service {
         width: 80%;
     }

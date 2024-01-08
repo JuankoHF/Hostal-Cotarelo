@@ -173,18 +173,52 @@
                   Pide el desayuno que quieras, lo puedes solicitar el mismo día en la mañana o antes de acostarte.
                 </p>
   
-                <ul>
-                  <li><strong>Opción 1:</strong> 8 USD/EUR</li>
-                  <li class="description">Tostadas, Café, Dulce, Mantequilla o Mayonesa, Confitura, Frutas, Jugo, Huevo y Leche.</li>
-                  <li><strong>Opción 2:</strong> 7 USD/EUR</li>
-                  <li class="description">Tostadas, Café, Dulce, Mantequilla o Mayonesa, Confitura, Frutas, Jugo, Huevo y Yogurt.</li>
-                  <li><strong>Opción 3:</strong> 5 USD/EUR</li>
-                  <li class="description">Tostadas, Café, Mantequilla o Mayonesa, Confitura, Frutas, Jugo y Huevo.</li>
-                  <li><strong>Opción 4:</strong> 2.5 USD/EUR</li>
-                  <li class="description">Tostadas, Café y Mantequilla o Mayonesa.</li>
-                </ul>
+                <div class="content_mural">
+
+                  <div class="image_mural">
+                    <img src="./images/img_mural.webp" alt="desayuno en el hostal">
+                  </div>
+
+                  <div class="alining_left">
+                    <ul class="left_up" data-aos="fade-up-right" data-aos-duration="1200">
+                      <li><strong>Opción 1:</strong> 8 USD/EUR</li>
+                      <li class="description">Tostadas, Café, Dulce, Mantequilla o Mayonesa, Confitura, Frutas, Jugo, Huevo y Leche.</li>
+                    </ul>
+                    <ul class="left_down" data-aos="fade-up-right" data-aos-duration="1600">
+                      <li><strong>Opción 3:</strong> 5 USD/EUR</li>
+                      <li class="description">Tostadas, Café, Mantequilla o Mayonesa, Confitura, Frutas, Jugo y Huevo.</li>
+                    </ul>
+                  </div>
+             
+
+                  <div class="alining_right">
+                    <ul class="right_up" data-aos="fade-up-left" data-aos-duration="1400">
+                      <li><strong>Opción 2:</strong> 7 USD/EUR</li>
+                      <li class="description">Tostadas, Café, Dulce, Mantequilla o Mayonesa, Confitura, Frutas, Jugo, Huevo y Yogurt.</li>
+
+                    </ul>
+                    <ul class="right_down" data-aos="fade-up-left" data-aos-duration="1800">
+                      <li><strong>Opción 4:</strong> 2.5 USD/EUR</li>
+                      <li class="description">Tostadas, Café y Mantequilla o Mayonesa.</li>
+                    </ul>
+                  </div>
+                 
+                </div>
+                
+                
               </div>
 
+              <div class="content_image_all_services">
+                <div class="all_services_top">
+                  <img class="img_left" src="./images/senicero.jpg" alt="cortecia_hostal">
+                  <img class="img_center" src="./images/desayuno.jpg" alt="desayuno hostal">
+                  <img class="img_right" src="./images/botellas-ron.jpg" alt="bienvenida hosta">
+                </div>
+                <div class="all_services_bottom">
+                  <img class="img_right_top" src="./images/zona-trabajo.jpg" alt="zona de trabajo del hostal">
+                  <img class="img_right_bottom" src="./images/patio-del-desayuno.jpg" alt="señora (pintora) artista el hostal">
+                </div>
+              </div>
               <h3>Cambio de divisas</h3>
               <p>En nuestro hostal te echamos una mano para conseguir la moneda local (CUP) de manera súper fácil. No te preocupes por la tasa oficial, ¡la nuestra es mucho mejor!</p>
               <p>El valor de cambio esta en función del mercado y se actualiza constantemente.</p>
@@ -425,45 +459,45 @@
             <form class="form" action="#" id="form">
                 <div class="input-box">
                     <label>Nombre</label>
-                    <input required="" placeholder="Escriba su nombre completo" type="text" name="name">
+                    <input required="" placeholder="Escriba su nombre completo" type="text" name="name" id="name">
                 </div>
                 <div class="input-box">
                   <label>Correo electrónico</label>
-                  <input required="" placeholder="Escriba un correo electrónicode contacto" type="email" name="email">
+                  <input required="" placeholder="Escriba un correo electrónicode contacto" type="email" id="email" name="email">
                 </div>
                 <div class="column">
                     <div class="input-box">
                       <label>Fecha de Entrada</label>
-                      <input required="" placeholder="" type="date" name="inDate">
+                      <input required="" placeholder="" type="date" id="inDate" name="inDate">
                     </div>
                     <div class="input-box">
                       <label>Fecha de salida</label>
-                      <input required="" placeholder="" type="date" name="outDate">
+                      <input required="" placeholder="" type="date" id="outDate" name="outDate">
                     </div>
                 </div>
           
                 <div class="column">
                   <div class="input-box">
                     <label>Huéspedes</label>
-                    <input required="" placeholder="Cantidad de personas" type="number" name="persons">
+                    <input required="" placeholder="Cantidad de personas" type="number" id="persons" name="persons">
                   </div>
                   <div class="input-box">
                     <label>Hasta 5 habitaciones</label>
-                    <input required="" placeholder="Cantidad de habitaciones" type="number" name="rooms">
+                    <input required="" placeholder="Cantidad de habitaciones" type="number" id="rooms" name="rooms">
                   </div>
                 </div>
                 <div class="input-box">
                   <label>País de Procedencia</label>
-                  <input required="" placeholder="Desde que pais nos visita" type="text" name="country">
+                  <input required="" placeholder="Desde que pais nos visita" type="text" id="country" name="country">
                 </div>
 
                 <div class="input-box">
                   <label>Nacionalidad</label>
-                  <input required="" placeholder="" type="text" name="nation">
+                  <input required="" placeholder="" type="text" id="nation" name="nation">
                 </div>
                 <div class="input-box text_area">
                   <label>Comentenos en que podemos ayudarle</label>
-                  <textarea rows="10" cols="30" id="message" placeholder="" type="text" name="mensage"> </textarea>
+                  <textarea rows="10" cols="30" id="mensage" placeholder="" type="text"  name="mensage"> </textarea>
                 </div>
                 <input type="submit" id="button" value="Enviar" >
             </form>
