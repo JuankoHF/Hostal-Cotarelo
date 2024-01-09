@@ -210,3 +210,48 @@
         gap: 10px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+   
+    .welcome {
+        padding: 30vh 0 5vh;
+       
+    }
+    .welcome_hostal {
+        gap: 40px;
+    }
+    .welcome_hostal p {
+        padding: 16px 40px;
+    }
+    .welcome_hostal span {
+        width: 400px;
+        height: 110px;
+    }
+    .welcome_hostal a {
+        padding: 8px 36px;
+    }
+    .welcome_botom {
+        width: 90%;
+        max-width: 1000px;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .welcome_botom h1 {
+        line-height: inherit;
+        margin-bottom: 6px;
+    }
+
+    .welcome_botom h2 {
+        margin-bottom: 0px;
+        line-height: inherit;
+    }
+    .welcome_botom ul {
+        width: auto;
+        gap: 10px;
+    }
+
+    
+}

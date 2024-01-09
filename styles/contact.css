@@ -130,3 +130,33 @@ input[type="submit"]:hover {
         margin-top: 40px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .container_form {
+        max-width: 500px;
+        padding: 24px 48px;
+        border-radius: 12px;
+    }
+    .input-box label {
+        font-size: var(--font-14-medium);
+    }
+    .form :where(.input-box input, .select-box) {
+        height: 36px;
+        font-size: 1.4rem;
+        padding: 0 8px 0 16px;
+    }
+    .form .input-box {
+        width: 100%;
+        margin: 4px 0;
+    }
+    textarea {
+        height: 140px;
+        font-size: 1.4rem !important;
+        padding: 8px 16px;
+    }
+    input[type="submit"] {
+        height: 40px;
+        font-size: var(--font-16-medium);
+        margin-top: 24px;
+    }
+}

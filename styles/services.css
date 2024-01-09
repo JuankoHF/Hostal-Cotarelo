@@ -24,7 +24,7 @@
 }
 .service_content {
     width: 90%;
-    max-width: 800px;
+    max-width: 900px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -374,10 +374,99 @@
 
     }
 
+    .content_image_all_services {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .all_services_top {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        gap: 8px;
+    }
+    .all_services_bottom {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
     .icons_service ul {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 1fr);
         gap: 12px 24px;
         padding: 0 !important;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .all_services_top {
+        height: 250px;
+    }
+
+    .all_services_bottom {
+        height: 280px;
+    }
+
+    .icons_service ul {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 16px 24px;
+        padding: 0 !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .image_mural {
+        width: 700px;
+        height: 200px;
+        position: absolute;
+        top: calc(50% - 100px);
+        left: calc(50% - 350px);
+        z-index: 1;
+    }
+
+    .content_mural {
+        height: 480px;
+    }
+    .alining_left, .alining_right {
+        width: 330px;
+        gap: 246px;
+    }
+
+    .content_image_all_services {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .all_services_top {
+        width: 100%;
+        height: 250px;
+        display: flex;
+        gap: 8px;
+    }
+    .all_services_bottom {
+        width: 230px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .icons_service {
+        max-width: 900px;
+    }
+
+    .icons_service ul {
+        gap: 30px 24px;
+    }
+    .icons_service ul li span {
+        width: 32px;
+        height: 32px;
+    }
+    .icons_service ul li {
+        gap: 14px;
+        font-size: var(--font-2-medium);
     }
 }
