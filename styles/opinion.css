@@ -13,7 +13,7 @@
 
 .content_card_opinion {
     width: 100%;
-    max-width: 1000px;
+    /* max-width: 1000px; */
     height: auto;
     display: flex;
     flex-direction: column;
@@ -127,4 +127,96 @@
 
 .client_opinion {
     margin-top: 8px !important;
+}
+
+@media screen and (min-width: 700px) and (min-height: 510px) {
+    .content_card_opinion {
+        gap: 40px;
+    }
+    .content_card_opinion h2 {
+        font-size: var(--font-28-big);
+        letter-spacing: 0.8px;
+    }
+    .content_image {
+        height: 300px;
+    }
+    .stars_opinion span {
+        width: 16px;
+        height: 16px;
+    }
+    .stars_opinion h3 {
+        margin: 0 0 0 8px !important;
+        font-size: var(--font-2-medium);
+    }
+    .content_text_opinion {
+        width: 70%;
+        margin: -60px 0 30px;
+        padding: 20px;
+    }
+
+    .content_text_opinion p {
+        font-size: var(--font-18-medium);
+    }
+    .stars_opinion p {
+        margin: 0 0 0px 8px !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .card_opinion {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .content_image {
+        width: 60%;
+        height: 450px;
+    }
+    .content_text_opinion {
+        width: 40%;
+        margin: 130px 0 30px -200px;
+        padding: 20px;
+    }
+    .content_text_opinion p {
+        font-size: var(--font-16-medium);
+    }
+    .second_card {
+        flex-direction: row-reverse;
+    }
+
+    .second_card .content_text_opinion {
+        width: 40%;
+        margin: 260px -280px 30px 0;
+        padding: 20px;
+    }
+    
+}
+
+@media screen and (min-width: 1900px) {
+    .content_card_opinion h2 {
+        font-size: var(--font-3-big);
+        letter-spacing: 1px;
+    }
+    .content_image {
+        width: 60%;
+        height: 500px;
+    }
+    .stars_opinion {
+        padding: 14px 24px;
+    }
+    .stars_opinion span {
+        width: 18px;
+        height: 18px;
+    }
+    .stars_opinion h3 {
+        margin: 0 0 0 10px !important;
+        font-size: var(--font-24-big);
+    }
+    .content_text_opinion {
+        border-radius: 8px;
+        padding: 24px;
+    }
+    .content_text_opinion p {
+        font-size: var(--font-2-medium);
+    }
 }

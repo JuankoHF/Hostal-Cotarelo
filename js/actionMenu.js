@@ -46,8 +46,7 @@ window.addEventListener('scroll', function() {
     let moveLogo = document.querySelector(".absolute_over");
     let positionMoveLogo = moveLogo.getBoundingClientRect().top;
 
-    console.log( positionMoveLogo, "logo");
-    console.log(scrollTop);
+    
     if(positionAnimateHeader < -160) {
         smallHeader.classList.add("big_header");
         navResponsive.classList.add("responsive_top");

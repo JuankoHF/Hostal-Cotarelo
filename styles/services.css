@@ -23,8 +23,8 @@
     padding-bottom: 48px;
 }
 .service_content {
-    width: 80%;
-    max-width: 800px;
+    width: 90%;
+    max-width: 900px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -57,8 +57,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 20px
+    align-items: center;
+    
 }
 .description_service p {
     font-size: var(--font-16-medium);
@@ -66,14 +66,93 @@
     line-height: inherit;
 }
 
-.description_service ul li {
-    font-size: var(--font-16-medium);
-    margin-bottom: 8px !important;
-    line-height: inherit;
+.content_mural {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 12px 0;
 }
-.description_service ul .description {
-    margin: 0 0 12px 10px !important;
+
+.alining_left, .alining_right {
+    width: 154px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 160px;
+    z-index: 5;
+    overflow-y: hidden;
 }
+
+.alining_left ul li, .alining_right ul li {
+    font-size: var(--font-14-medium);
+}
+
+.alining_left ul .description, .alining_right ul .description {
+    margin-top: 8px !important;
+}
+
+.alining_right ul li {
+    text-align: right;
+}
+
+.image_mural {
+    width: 300px;
+    height: 120px;
+    position: absolute;
+    top: calc(50% - 60px);
+    left: calc(50% - 150px);
+    z-index: 1;
+}
+.image_mural img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.content_image_all_services {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px
+}
+
+.all_services_top img, .all_services_bottom img {
+    object-fit: cover;
+    display: flex;
+    object-position: center;
+}
+
+.all_services_top {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    gap: 8px;
+}
+.img_left {
+    width: 60%;
+    height: 100%;
+}
+.img_center, .img_right {
+    width: 20%;
+    height: 100%;
+}
+.all_services_bottom {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    gap: 8px;
+}
+
 .service_content p {
     font-size: var(--font-16-medium);
     margin-bottom: 8px;
@@ -129,6 +208,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(7, 1fr);
     gap: 12px 24px;
+    padding: 0 5% !important;
 }
 
 .icons_service ul li {
@@ -178,4 +258,278 @@
 }
 .llave {
     background-image: url(../icons/key-svgrepo-com.svg);
+}
+
+@media screen and (min-width: 400px) {
+   .service_content {
+        width: 80%;
+    }
+    .icons_service {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 700px) and (min-height: 510px) {
+    
+    .icons_service {
+        width: 70%;
+    }
+    .service_content h2 {
+        font-size: var(--font-28-big);
+        letter-spacing: 0.8px;
+        margin-bottom: 28px;
+    }
+    .service_content h3 {
+        font-size: var(--font-24-big);
+        margin-bottom: 20px;
+    }
+    .description_service {
+        margin-bottom: 40px;
+    }
+    .service_content p {
+        font-size: var(--font-18-medium);
+        margin-bottom: 20px;
+    }
+
+    .content_mural {
+        height: 560px;
+    }
+    .image_mural {
+        width: 600px;
+        height: 200px;
+        position: absolute;
+        top: calc(50% - 100px);
+        left: calc(50% - 300px);
+        z-index: 1;
+    }
+
+    .alining_left, .alining_right {
+        width: 260px;
+        gap: 260px;
+    }
+
+    .alining_left ul li, .alining_right ul li {
+        font-size: var(--font-18-medium);
+    }
+
+    .content_image_all_services {
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+
+    .all_services_top {
+        width: 100%;
+        height: 220px;
+        display: flex;
+        gap: 10px;
+    }
+    .all_services_bottom {
+        width: 100%;
+        height: 220px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .content_icon_service {
+        padding: 60px 0;
+    }
+
+    .icons_service h2 {
+        font-size: var(--font-28-big);
+        letter-spacing: 0.8px;
+        margin-bottom: 40px;
+    }
+
+    .icons_service ul {
+        gap: 20px 60px;
+    }
+    .icons_service ul li {
+        gap: 16px;
+        font-size: var(--font-18-medium);
+    }
+    .icons_service ul li span {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-height: 500px) {
+    .image_mural {
+        width: 480px;
+        height: 150px;
+        position: absolute;
+        top: calc(50% - 75px);
+        left: calc(50% - 240px);
+        z-index: 1;
+    }
+
+    .content_mural {
+        width: 100%;
+        height: 360px;
+        padding: 0;
+    }
+    .alining_left, .alining_right {
+        width: 300px;
+        gap: 200px;
+
+    }
+
+    .content_image_all_services {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .all_services_top {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        gap: 8px;
+    }
+    .all_services_bottom {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .icons_service ul {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 12px 24px;
+        padding: 0 !important;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .all_services_top {
+        height: 250px;
+    }
+
+    .all_services_bottom {
+        height: 280px;
+    }
+
+    .icons_service ul {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 16px 24px;
+        padding: 0 !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .image_mural {
+        width: 720px;
+        height: 180px;
+        position: absolute;
+        top: calc(50% - 90px);
+        left: calc(50% - 360px);
+        z-index: 1;
+    }
+
+    .content_mural {
+        height: 480px;
+    }
+    .alining_left, .alining_right {
+        width: 330px;
+        gap: 246px;
+    }
+
+    .content_image_all_services {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .all_services_top {
+        width: 100%;
+        height: 250px;
+        display: flex;
+        gap: 8px;
+    }
+    .all_services_bottom {
+        width: 230px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .icons_service {
+        max-width: 900px;
+    }
+
+    .icons_service ul {
+        gap: 30px 24px;
+    }
+    .icons_service ul li span {
+        width: 32px;
+        height: 32px;
+    }
+    .icons_service ul li {
+        gap: 14px;
+        font-size: var(--font-2-medium);
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .service_content h2 {
+        font-size: var(--font-3-big);
+        letter-spacing: 1px;
+        margin-bottom: 36px;
+    }
+   
+    .service_content h3 {
+        font-size: var(--font-24-big);
+        margin-bottom: 28px;
+    }
+
+    .description_service {
+        margin-bottom: 60px;
+    }
+    .service_content p {
+        font-size: var(--font-2-medium);
+        margin-bottom: 28px;
+    }
+
+    .content_mural {
+        height: 530px;
+    }
+
+    .alining_left ul li, .alining_right ul li {
+        font-size: var(--font-2-medium);
+    }
+
+    .content_image_all_services {
+        gap: 12px;
+        margin-bottom: 60px;
+    }
+    .all_services_top {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        gap: 12px;
+    }
+    .all_services_bottom {
+        width: 288px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .icons_service {
+        max-width: 1100px;
+    }
+
+    .icons_service h2 {
+        font-size: var(--font-3-big);
+        letter-spacing: 1px;
+    }
+    .transfers .bg_solid {
+        padding: 60px 0 36px;
+    }
+
+    .transfers .description_service {
+        margin-bottom: 20px;
+    }
 }

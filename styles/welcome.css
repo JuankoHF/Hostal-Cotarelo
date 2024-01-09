@@ -60,7 +60,7 @@
 
 .welcome_botom {
     width: 90%;
-    max-width: 500px;
+    max-width: 600px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -122,4 +122,181 @@
 }
 .frizet {
     background-image: url(../icons/fridge-white.svg);
+}
+
+@media screen and (min-width: 700px) and (min-height: 510px) {
+    .welcome_hostal {
+        gap: 48px;
+    }
+
+    .welcome_hostal p {
+        font-size: var(--font-3-big);
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+        padding: 16px 32px;
+    }
+
+    .welcome_hostal span {
+        width: 360px;
+        height: 100px; 
+    }
+
+    .welcome_hostal a {
+        font-size: var(--font-2-medium);
+        padding: 8px 28px;
+    }
+
+    .welcome_botom h1 {
+        font-size: var(--font-24-big);
+        letter-spacing: 1.2px;
+        color: var(--white-page);
+        margin-bottom: 20px;
+    }
+
+    .welcome_botom h2 {
+        font-size: var(--font-2-medium);
+        letter-spacing: 0.8px;
+        margin-bottom: 40px;
+    }
+
+    .welcome_botom ul li {
+        gap: 12px;
+        font-size: var(--font-14-medium);
+    }
+    .welcome_botom ul li span {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-height: 500px) {
+    .welcome_hostal {
+        gap: 16px;
+    }
+
+    .welcome_hostal p {
+        font-size: var(--font-24-big);
+        padding: 8px 20px;
+    }
+    .welcome_hostal span {
+        display: block;
+        width: 280px;
+        height: 70px;
+    }
+
+    .welcome_hostal a {
+        font-size: var(--font-14-medium);
+        padding: 5px 16px;
+    }
+    
+    .welcome_botom {
+        width: 90%;
+        max-width: 800px;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .welcome_botom h1 {
+        margin-bottom: 6px;
+    }
+
+    .welcome_botom h2 {
+        margin-bottom: 0px;
+    }
+    .welcome_botom ul {
+        width: auto;
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+   
+    .welcome {
+        padding: 30vh 0 5vh;
+       
+    }
+    .welcome_hostal {
+        gap: 40px;
+    }
+    .welcome_hostal p {
+        padding: 16px 40px;
+    }
+    .welcome_hostal span {
+        width: 400px;
+        height: 110px;
+    }
+    .welcome_hostal a {
+        padding: 8px 36px;
+    }
+    .welcome_botom {
+        width: 90%;
+        max-width: 1000px;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .welcome_botom h1 {
+        line-height: inherit;
+        margin-bottom: 6px;
+    }
+
+    .welcome_botom h2 {
+        margin-bottom: 0px;
+        line-height: inherit;
+    }
+    .welcome_botom ul {
+        width: auto;
+        gap: 10px;
+    }
+
+    
+}
+
+@media screen and (min-width: 1900px) {
+    .welcome_hostal {
+        gap: 48px;
+        max-width: 500px;
+    }
+    .welcome_hostal p {
+        padding: 18px 52px;
+        letter-spacing: 1.8px;
+        font-size: var(--font-34-big);
+    }
+    .welcome_hostal span {
+        width: 500px;
+        height: 150px;
+    }
+    .welcome_hostal a {
+        padding: 10px 48px;
+        font-size: var(--font-24-big);
+        letter-spacing: 0.8px;
+    }
+    .welcome_botom {
+        max-width: 1400px;
+    }
+
+    .welcome_botom h1 {
+        font-size: var(--font-28-big);
+        letter-spacing: 1.6px;
+    }
+    .welcome_botom h2 {
+        font-size: var(--font-24-big);
+        letter-spacing: 1.2px;
+    }
+    .welcome_botom ul {
+        width: auto;
+        gap: 30px;
+    }
+    .welcome_botom ul li {
+        gap: 12px;
+        font-size: var(--font-18-medium);
+    }
+    .welcome_botom ul li span {
+        width: 30px;
+        height: 30px;
+    }
 }

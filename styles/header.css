@@ -166,3 +166,112 @@ header {
     color: var(--total-black);
     font-size: var(--font-2-medium);
 }
+
+@media screen and (min-width: 1200px) {
+    header {
+        height: 130px;
+    }
+    .header_content {
+        height: 70px;
+        border-radius: 8px;
+    }
+
+    .big_header {
+        border-radius: 0px;
+    }
+    .header_content img {
+        width: 210px;
+    }
+    .icon_lincks {
+        display: flex;
+        gap: 16px;
+    }
+    .icon_lincks span {
+        display: block;
+        width: 28px;
+        height: 28px;
+    }
+
+    .icon_lincks span:hover {
+        background-color: rgb(230, 227, 101);
+        border-radius: 50%;
+        transition: all 0.2s linear;
+    }
+    .big_header .icon_lincks {
+        margin-left: 200px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .responsive_display {
+        width: auto;
+        height: 100%;
+        display: flex;
+        position: relative;
+        clip-path: none;
+        top: 0;
+        opacity: 1;
+    }
+    .responsive_display ul {
+        width: auto;
+        max-width: 1000px;
+        height: 100%;
+        padding: 0 !important;
+        background-color: var(--white-page);
+        box-shadow: none;
+        margin: 0 auto !important;
+        border-radius: 0;
+        display: flex;
+    }
+
+    .responsive_display ul li {
+        margin-top: 0px !important;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .responsive_display ul .this_section {
+        padding:  8px 12px!important;
+        
+    }
+    .responsive_display ul .this_section a {
+        color: var(--total-black);
+        font-size: var(--font-16-medium);
+        opacity: 1;
+        border-bottom: solid 2px var(--total-black);
+        transition: all 0.4s ease-in-out;
+    }
+
+    .responsive_display ul li a:hover {
+        padding-bottom: 4px;
+        opacity: 1;
+        transition: all 0.4s ease-in-out;
+        color: var(--total-black);
+    }
+}
+@media screen and (min-width: 1600px) {
+    .big_header {
+        padding-right: 24px;
+    }
+    .big_header .icon_lincks {
+        margin-left: 500px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .big_header {
+        padding: 0 40px 0 24px;
+    }
+    .big_header .icon_lincks {
+        margin-left: 600px;
+    }
+    .big_header .responsive_display ul li {
+        padding: 8px 20px !important;
+    }
+    .big_header .responsive_display ul li a {
+        font-size: var(--font-18-medium);
+    }
+}
