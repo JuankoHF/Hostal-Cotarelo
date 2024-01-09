@@ -191,3 +191,32 @@
     }
     
 }
+
+@media screen and (min-width: 1900px) {
+    .content_card_opinion h2 {
+        font-size: var(--font-3-big);
+        letter-spacing: 1px;
+    }
+    .content_image {
+        width: 60%;
+        height: 500px;
+    }
+    .stars_opinion {
+        padding: 14px 24px;
+    }
+    .stars_opinion span {
+        width: 18px;
+        height: 18px;
+    }
+    .stars_opinion h3 {
+        margin: 0 0 0 10px !important;
+        font-size: var(--font-24-big);
+    }
+    .content_text_opinion {
+        border-radius: 8px;
+        padding: 24px;
+    }
+    .content_text_opinion p {
+        font-size: var(--font-2-medium);
+    }
+}

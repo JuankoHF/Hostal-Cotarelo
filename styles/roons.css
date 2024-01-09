@@ -196,3 +196,29 @@
         width: 50%;
     }
 }
+
+@media screen and (min-width: 1900px) {
+    .confort h2 {
+        font-size: var(--font-3-big);
+        letter-spacing: 1px;
+        margin-bottom: 36px;
+    }
+    .confort p {
+        font-size: var(--font-2-medium);
+        margin-bottom: 36px;
+    }
+
+    .slider_text h3 {
+        font-size: var(--font-28-big);
+        margin-bottom: 28px;
+    }
+    .slider_text p {
+        font-size: var(--font-2-medium);
+        margin-bottom: 28px;
+        text-align: center;
+    }
+    .slider_text a {
+        font-size: var(--font-24-big);
+        padding: 10px 40px;
+    }
+}

@@ -255,3 +255,48 @@
 
     
 }
+
+@media screen and (min-width: 1900px) {
+    .welcome_hostal {
+        gap: 48px;
+        max-width: 500px;
+    }
+    .welcome_hostal p {
+        padding: 18px 52px;
+        letter-spacing: 1.8px;
+        font-size: var(--font-34-big);
+    }
+    .welcome_hostal span {
+        width: 500px;
+        height: 150px;
+    }
+    .welcome_hostal a {
+        padding: 10px 48px;
+        font-size: var(--font-24-big);
+        letter-spacing: 0.8px;
+    }
+    .welcome_botom {
+        max-width: 1400px;
+    }
+
+    .welcome_botom h1 {
+        font-size: var(--font-28-big);
+        letter-spacing: 1.6px;
+    }
+    .welcome_botom h2 {
+        font-size: var(--font-24-big);
+        letter-spacing: 1.2px;
+    }
+    .welcome_botom ul {
+        width: auto;
+        gap: 30px;
+    }
+    .welcome_botom ul li {
+        gap: 12px;
+        font-size: var(--font-18-medium);
+    }
+    .welcome_botom ul li span {
+        width: 30px;
+        height: 30px;
+    }
+}

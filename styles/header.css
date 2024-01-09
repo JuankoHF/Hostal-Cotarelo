@@ -192,10 +192,18 @@ header {
         height: 28px;
     }
 
+    .icon_lincks span:hover {
+        background-color: rgb(230, 227, 101);
+        border-radius: 50%;
+        transition: all 0.2s linear;
+    }
+    .big_header .icon_lincks {
+        margin-left: 200px;
+    }
+
     .menu {
         display: none;
     }
-
 
     .responsive_display {
         width: auto;
@@ -242,5 +250,28 @@ header {
         opacity: 1;
         transition: all 0.4s ease-in-out;
         color: var(--total-black);
+    }
+}
+@media screen and (min-width: 1600px) {
+    .big_header {
+        padding-right: 24px;
+    }
+    .big_header .icon_lincks {
+        margin-left: 500px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .big_header {
+        padding: 0 40px 0 24px;
+    }
+    .big_header .icon_lincks {
+        margin-left: 600px;
+    }
+    .big_header .responsive_display ul li {
+        padding: 8px 20px !important;
+    }
+    .big_header .responsive_display ul li a {
+        font-size: var(--font-18-medium);
     }
 }
