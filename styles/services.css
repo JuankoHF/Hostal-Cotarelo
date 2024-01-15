@@ -350,6 +350,11 @@
         font-size: var(--font-24-big);
         margin-bottom: 20px;
     }
+
+    .service_content h4 {
+        font-size: var(--font-24-big);
+        margin-bottom: 20px;
+    }
     .description_service {
         margin-bottom: 40px;
     }
@@ -418,6 +423,21 @@
         width: 28px;
         height: 28px;
     }
+    .flexi_transfer {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .transfer_item {
+      width: 100%;
+      padding: 8px 32px 8px 20px;
+      clip-path: polygon(0% 0%, 100% 0, 95% 51%, 100% 100%, 0% 100%);
+      border-radius: 8px 0 0 8px;
+    }
+    .bg_solid_information {
+        font-size: var(--font-2-medium);
+        padding: 8px 28px;
+    }
 }
 
 @media screen and (min-width: 800px) and (max-height: 500px) {
@@ -465,6 +485,7 @@
         gap: 12px 24px;
         padding: 0 !important;
     }
+   
 }
 
 @media screen and (min-width: 1000px) {
@@ -535,6 +556,33 @@
     .icons_service ul li {
         gap: 14px;
         font-size: var(--font-2-medium);
+    }
+    .content_flexi_transfer {
+        width: 94%;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+        
+    }
+    .flexi_transfer {
+        width: 75%;
+        margin-top: 0px;
+    }
+    .second_flexi {
+        width: 25%;
+    }
+
+    .content_transfer_item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 16px;
+    }
+    .bg_solid_information {
+        margin: 40px 0 30px;
     }
 }
 

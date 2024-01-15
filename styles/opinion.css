@@ -164,6 +164,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .content_card_opinion {
+        padding-top: 60px;
+    }
+
     .card_opinion {
         flex-direction: row;
         align-items: flex-start;
