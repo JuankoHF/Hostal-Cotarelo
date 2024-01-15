@@ -14,9 +14,7 @@ function animateNav() {
 
 window.addEventListener('scroll', function() {
 
-    // let animateContact = document.getElementById('contact');
-    // let positionContact = animateContact.getBoundingClientRect().top;
-    // let linckContact = document.querySelector(".link_whatsapp");
+    let linckContact = document.querySelector(".link_whatsapp");
 
     let animateHeader = document.getElementById('headerTop');
     let positionAnimateHeader = animateHeader.getBoundingClientRect().top;
@@ -50,11 +48,14 @@ window.addEventListener('scroll', function() {
     if(positionAnimateHeader < -160) {
         smallHeader.classList.add("big_header");
         navResponsive.classList.add("responsive_top");
+        linckContact.classList.add("visibleWhatsapp")
     }
 
     if(positionAnimateHeader == 0) {
         smallHeader.classList.remove("big_header");
         navResponsive.classList.remove("responsive_top");
+        linckContact.classList.remove("visibleWhatsapp")
+
     }
 
     if(positionAnimateHeader < 0) {

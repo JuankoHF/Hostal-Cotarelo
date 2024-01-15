@@ -32,3 +32,15 @@ window.sr =ScrollReveal();
         origin: 'left',
         distance: '-100px'
     });
+
+    sr.reveal('.four_person', {
+        duration: 1000,
+        origin: 'left',
+        distance: '-100px'
+    });
+
+    sr.reveal('.plus_four_person', {
+        duration: 1500,
+        origin: 'left',
+        distance: '-100px'
+    });

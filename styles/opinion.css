@@ -20,6 +20,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 28px;
+    padding-top: 40px;
 }
 
 .content_card_opinion h2 {
@@ -163,6 +164,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .content_card_opinion {
+        padding-top: 60px;
+    }
+
     .card_opinion {
         flex-direction: row;
         align-items: flex-start;
