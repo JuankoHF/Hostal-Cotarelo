@@ -48,7 +48,7 @@ window.addEventListener('scroll', function() {
     if(positionAnimateHeader < -160) {
         smallHeader.classList.add("big_header");
         navResponsive.classList.add("responsive_top");
-        linckContact.classList.add("visibleWhatsapp")
+        linckContact.classList.add("visibleWhatsapp");
     }
 
     if(positionAnimateHeader == 0) {
@@ -113,6 +113,7 @@ window.addEventListener('scroll', function() {
         li2.classList.remove("this_section");
         li4.classList.remove("this_section");
         li5.classList.remove("this_section");
+        linckContact.classList.remove("visibleWhatsapp");
     }
 
     if(positionMoveLogo < scrollTop/1.5) {
