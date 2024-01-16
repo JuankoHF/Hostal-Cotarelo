@@ -73,7 +73,7 @@ footer {
 }
 .icons_company {
     width: 50%;
-    max-width: 400px;
+    max-width: 240px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -136,6 +136,14 @@ footer {
         font-size: 1.2rem;
     }
     .icons_company {
-        margin-top: 36px;
+        margin-top: 20px;
+    }
+    .link_tope {
+        margin-top: 40px;
+    }
+    .link_tope a {
+        padding: 6px 20px;
+        font-size: var(--font-14-medium);
+        border-radius: 6px;
     }
 }
