@@ -38,6 +38,109 @@
     align-items: center;
     padding: 0 5% 60px;
 }
+.bg_solid_pd {
+    width: 100%;
+    background-color: var(--white-page);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 60px;
+}
+swiper-container {
+    width: 100%;
+}
+.swiper_landCase {
+    display: none;
+}
+swiper-slide {
+    height: 340px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.all_swiper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(31, 30, 30, 0.288);
+}
+.information_swiper {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 6px;
+    background-color: var(--trasparent-color-blue);
+    padding: 10px 8px;
+}
+.top_information_swiper h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: var(--font-14-medium);
+    margin-bottom: 4px;
+    color: var(--white-page);
+}
+.top_information_swiper p {
+    font-size: var(--font-1-small);
+    color: var(--white-page);
+    margin-bottom: 4px !important;
+}
+.btn_information_swiper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn_information_swiper p {
+    font-size: var(--font-1-small);
+    color: var(--white-page);
+}
+.btn_information_swiper p {
+    font-size: var(--font-1-small);
+}
+.btn_information_swiper a {
+    text-decoration: none;
+    font-size: var(--font-1-small);
+    color: var(--white-page);
+    padding: 2px 6px;
+    border: solid 1px var(--white-page);
+    
+}
+.btn_information_swiper a:hover {
+    background-color: rgba(0, 0, 0, 0.568);
+    transition: all 0.4s linear;
+}
+swiper-slide:nth-child(1) {
+    background-image: url(../images/IMG_8300.jpg);
+ 
+}
+  swiper-slide:nth-child(2) {
+    background-image: url(../images/desayuno.jpg);
+  }
+
+  swiper-slide:nth-child(3) {
+    background-image: url(../images/tarjeta_sim.jpg);
+  }
+
+  swiper-slide:nth-child(4) {
+    background-image: url(../images/horarios.jpg);
+  }
+
+  swiper-slide:nth-child(5) {
+    background-image: url(../images/senicero.jpg);
+  }
+
+  swiper-slide:nth-child(6) {
+    background-image: url(../images/fondo-patio.jpg);
+  }
+
 .service_content {
     width: 90%;
     max-width: 900px;
@@ -338,6 +441,35 @@
 
 @media screen and (min-width: 700px) and (min-height: 510px) {
     
+    .bg_solid_pd {
+        padding-bottom: 80px;
+    }
+    
+    swiper-slide {
+        height: 430px;
+    }
+    .information_swiper {
+        height: 180px;
+        padding: 16px 20px;
+    }
+    .top_information_swiper h3 {
+        font-size: var(--font-18-medium);
+        margin-bottom: 8px;
+    }
+    .top_information_swiper p {
+        font-size: var(--font-14-medium);
+        margin-bottom: 4px !important;
+    }
+    .btn_information_swiper p {
+        font-size: var(--font-14-medium);
+    }
+    .btn_information_swiper p strong {
+        font-size: var(--font-16-medium);
+    }
+    .btn_information_swiper a {
+        font-size: var(--font-16-medium);
+        padding: 4px 14px;
+    }
     .icons_service {
         width: 70%;
     }
@@ -441,6 +573,42 @@
 }
 
 @media screen and (min-width: 800px) and (max-height: 500px) {
+   
+    .swiper_movile {
+        display: none;
+    }
+    .swiper_landCase {
+        display: block;
+    }
+    .bg_solid_pd {
+        padding-bottom: 60px;
+    }
+    
+    swiper-slide {
+        height: 300px;
+    }
+    .information_swiper {
+        height: 140px;
+        padding: 8px 8px;
+    }
+    .top_information_swiper h3 {
+        font-size: var(--font-14-medium);
+        margin-bottom: 4px;
+    }
+    .top_information_swiper p {
+        font-size: var(--font-1-small);
+        margin-bottom: 4px !important;
+    }
+    .btn_information_swiper p {
+        font-size: var(--font-1-small);
+    }
+    .btn_information_swiper p strong {
+        font-size: var(--font-14-medium);
+    }
+    .btn_information_swiper a {
+        font-size: var(--font-14-medium);
+        padding: 2px 10px;
+    }
     .image_mural {
         width: 480px;
         height: 150px;
@@ -489,6 +657,38 @@
 }
 
 @media screen and (min-width: 1000px) {
+    
+    .swiper_movile {
+        display: none;
+    }
+    .swiper_landCase {
+        display: block;
+    }
+    swiper-slide {
+        height: 450px;
+    }
+    .information_swiper {
+        height: 200px;
+        padding: 16px 20px;
+    }
+    .top_information_swiper h3 {
+        font-size: var(--font-18-medium);
+        margin-bottom: 8px;
+    }
+    .top_information_swiper p {
+        font-size: var(--font-14-medium);
+        margin-bottom: 4px !important;
+    }
+    .btn_information_swiper p {
+        font-size: var(--font-14-medium);
+    }
+    .btn_information_swiper p strong {
+        font-size: var(--font-16-medium);
+    }
+    .btn_information_swiper a {
+        font-size: var(--font-16-medium);
+        padding: 4px 14px;
+    }
     .all_services_top {
         height: 250px;
     }
@@ -506,6 +706,14 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .top_information_swiper h3 {
+        font-size: var(--font-2-medium);
+        margin-bottom: 8px;
+    }
+    .btn_information_swiper a {
+        padding: 4px 16px;
+    }
+    
     .image_mural {
         width: 720px;
         height: 180px;
@@ -587,6 +795,35 @@
 }
 
 @media screen and (min-width: 1900px) {
+    .bg_solid_pd {
+        padding-bottom: 120px;
+    }
+    swiper-slide {
+        height: 500px;
+    }
+    .information_swiper {
+        height: 220px;
+        padding: 24px 24px;
+    }
+    .top_information_swiper h3 {
+        font-size: var(--font-24-big);
+        margin-bottom: 12px;
+    }
+    .top_information_swiper p {
+        font-size: var(--font-16-medium);
+        margin-bottom: 4px !important;
+    }
+    .btn_information_swiper p {
+        font-size: var(--font-16-medium);
+        margin-bottom: 12px !important;
+    }
+    .btn_information_swiper p strong {
+        font-size: var(--font-18-medium);
+    }
+    .btn_information_swiper a {
+        font-size: var(--font-2-medium);
+        padding: 4px 20px;
+    }
     .service_content h2 {
         font-size: var(--font-3-big);
         letter-spacing: 1px;
@@ -646,5 +883,12 @@
 
     .transfers .description_service {
         margin-bottom: 20px;
+    }
+
+    .swiper_movile {
+        display: none;
+    }
+    .swiper_landCase {
+        display: block;
     }
 }
