@@ -463,6 +463,11 @@ swiper-slide:nth-child(1) {
     .bg_solid_pd {
         padding-bottom: 80px;
     }
+    .bg_solid_pd h2 {
+        font-size: var(--font-28-big);
+        letter-spacing: 0.8px;
+        margin-bottom: 28px;
+    }
     
     swiper-slide {
         height: 430px;
@@ -730,7 +735,7 @@ swiper-slide:nth-child(1) {
         height: 110px;
     }
     swiper-container {
-        margin-top: 28px;
+        margin-top: 20px;
     }
     .top_information_swiper h3 {
         font-size: var(--font-2-medium);
@@ -823,6 +828,11 @@ swiper-slide:nth-child(1) {
 @media screen and (min-width: 1900px) {
     .bg_solid_pd {
         padding-bottom: 120px;
+    }
+    .bg_solid_pd h2 {
+        font-size: var(--font-3-big);
+        letter-spacing: 1px;
+        margin-bottom: 36px;
     }
     swiper-slide {
         height: 500px;
