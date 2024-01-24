@@ -127,7 +127,7 @@
 
 @media screen and (min-width: 700px) and (min-height: 510px) {
     .roons {
-        padding: 60px 0 68px;
+        padding: 60px 0 80px;
     }
     .confort h2 {
         font-size: var(--font-28-big);
@@ -198,6 +198,9 @@
 }
 
 @media screen and (min-width: 1900px) {
+    .roons {
+        padding: 60px 0 120px;
+    }
     .confort h2 {
         font-size: var(--font-3-big);
         letter-spacing: 1px;

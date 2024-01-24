@@ -56,7 +56,7 @@
     border: 1px solid var(--detalle-grey);
     border-radius: 6px;
     padding: 0 8px 0 12px;
-    background: #dcdddf;
+    background: var(--white-page);
 }
   
 .input-box input:focus, textarea:focus {
@@ -78,7 +78,7 @@ textarea {
     border: 1px solid var(--detalle-grey);
     border-radius: 6px;
     padding: 8px 15px;
-    background: #dcdddf;
+    background: var(--white-page);
 }
   
 input[type="submit"] {

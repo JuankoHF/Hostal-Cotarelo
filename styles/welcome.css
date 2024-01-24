@@ -86,6 +86,11 @@
     border: solid 2px var(--white-page);
 }
 
+.welcome_hostal a:hover {
+    background-color: rgba(0, 0, 0, 0.568);
+    transition: all 0.4s linear;
+}
+
 .welcome_botom {
     width: 90%;
     max-width: 600px;
