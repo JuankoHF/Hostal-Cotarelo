@@ -20,7 +20,7 @@ footer {
 
 }
 .content {
-    width: 80%;
+    width: 90%;
     max-width: 600px;
     height: auto;
     display: flex;
@@ -35,6 +35,9 @@ footer {
     color: var(--total-black);
     opacity: 0.8;
     text-decoration: none;
+}
+.tope_contact {
+    text-align: center;
 }
 
 .footer img {

@@ -47,6 +47,16 @@
     align-items: center;
     padding-bottom: 60px;
 }
+.bg_solid_pd h2 {
+    font-size: var(--font-24-big);
+    text-transform: uppercase;
+    color: var(--total-black);
+    letter-spacing: 0.4px;
+    line-height: inherit;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-align: center;
+}
 swiper-container {
     width: 100%;
 }
@@ -158,7 +168,7 @@ swiper-slide:nth-child(1) {
     color: var(--total-black);
     letter-spacing: 0.4px;
     line-height: inherit;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
     font-weight: 500;
     text-align: center;
 }
@@ -167,9 +177,8 @@ swiper-slide:nth-child(1) {
     font-size: var(--font-2-medium);
     color: var(--total-black);
     line-height: inherit;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     font-weight: 500;
-    text-align: center;
 }
 
 .service_content h4 {
@@ -178,6 +187,19 @@ swiper-slide:nth-child(1) {
     line-height: inherit;
     font-weight: normal;
     margin-bottom: 12px;
+}
+
+.service_content p {
+    font-size: var(--font-16-medium);
+    margin-bottom: 8px;
+    line-height: inherit;
+    text-align: left;
+    width: 100%;
+}
+
+.service_content p a {
+    font-weight: 500;
+    color: var(--total-black);
 }
 
 .description_service {
@@ -191,8 +213,10 @@ swiper-slide:nth-child(1) {
 }
 .description_service p {
     font-size: var(--font-16-medium);
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     line-height: inherit;
+    text-align: left;
+    width: 100%;
 }
 
 .content_mural {
@@ -282,16 +306,6 @@ swiper-slide:nth-child(1) {
     gap: 8px;
 }
 
-.service_content p {
-    font-size: var(--font-16-medium);
-    margin-bottom: 8px;
-    line-height: inherit;
-}
-
-.service_content p a {
-    font-weight: 500;
-    color: var(--total-black);
-}
 
 .last_service {
     margin-top: 20px !important;
@@ -429,6 +443,10 @@ swiper-slide:nth-child(1) {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../icons/arrow-black.svg);
+}
+.pd_top {
+    width: 100%;
+    height: 80px;
 }
 @media screen and (min-width: 400px) {
    .service_content {
