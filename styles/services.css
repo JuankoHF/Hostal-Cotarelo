@@ -59,6 +59,7 @@
 }
 swiper-container {
     width: 100%;
+    margin-top: 8px;
 }
 .swiper_landCase {
     display: none;
@@ -724,6 +725,13 @@ swiper-slide:nth-child(1) {
 }
 
 @media screen and (min-width: 1200px) {
+    .pd_top {
+        width: 100%;
+        height: 110px;
+    }
+    swiper-container {
+        margin-top: 28px;
+    }
     .top_information_swiper h3 {
         font-size: var(--font-2-medium);
         margin-bottom: 8px;
