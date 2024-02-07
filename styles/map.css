@@ -32,6 +32,14 @@
     font-weight: 500;
     text-align: center;
 }
+.content_all_addres {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+}
 .addres_contact {
     width: 100%;
     height: auto;
@@ -41,7 +49,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
 }
 .felx_addres h3 {
     height: auto;
@@ -49,11 +57,11 @@
     color: var(--total-black);
     line-height: inherit;
     font-weight: 500;
-    text-align: center;
+    margin: 0;
 }
 .felx_addres span {
-    min-width: 24px;
-    min-height: 24px;
+    min-width: 26px;
+    min-height: 26px;
     display: block;
     background-position: center;
     background-repeat: no-repeat;
@@ -69,4 +77,76 @@
     width: 100%;
     height: auto;
     display: flex;
+}
+@media screen and (min-width: 700px) and (min-height: 510px) {
+    .content_addres_map h2 {
+        font-size: var(--font-28-big);
+        letter-spacing: 0.8px;
+    }
+    .felx_addres {
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+    .felx_addres span {
+        min-width: 30px;
+        min-height: 30px;
+    }  
+    .felx_addres h3 {
+        height: auto;
+        font-size: var(--font-2-medium);
+    }
+}
+@media screen and (min-width: 1200px) {
+    .map_addres {
+        padding-bottom: 60px;
+    }
+    .content_addres_map {
+        gap: 48px;
+    }
+    .content_all_addres {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 0px;
+    }
+    .felx_addres {
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+    .felx_addres span {
+        min-width: 32px;
+        min-height: 32px;
+    }  
+    .felx_addres h3 {
+        height: auto;
+        font-size: var(--font-2-medium);
+    }
+}
+@media screen and (min-width: 1900px) {
+    .map_addres {
+        padding-bottom: 80px;
+    }
+    .content_addres_map {
+        gap: 48px;
+        max-width: 1100px;
+    }
+    .content_addres_map h2 {
+        font-size: var(--font-3-big);
+        letter-spacing: 1px;
+    }
+ 
+    .felx_addres {
+        gap: 14px;
+        margin-bottom: 28px;
+    }
+    .felx_addres span {
+        min-width: 34px;
+        min-height: 34px;
+    }  
+    .felx_addres h3 {
+        height: auto;
+        font-size: var(--font-24-big);
+    }
 }
