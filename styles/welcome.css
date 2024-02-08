@@ -108,6 +108,7 @@
     font-family: 'Outfit', sans-serif;
     font-weight: 600;
     margin-bottom: 12px;
+    line-height: inherit;
 }
 .welcome_botom h2 {
     font-size: var(--font-16-medium);

@@ -160,3 +160,9 @@ input[type="submit"]:hover {
         margin-top: 24px;
     }
 }
+@media screen and (min-width: 1900px) {
+    .contact {
+        padding: 80px 0;
+    }
+}
+
